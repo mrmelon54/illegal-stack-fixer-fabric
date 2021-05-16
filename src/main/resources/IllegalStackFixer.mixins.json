@@ -1,0 +1,24 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.onpointcoding.illegalstackfixer.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "MixinAbstractDonkeyEntity",
+    "MixinAbstractFurnaceBlock",
+    "MixinBarrelBlock",
+    "MixinChestBlock",
+    "MixinChestMinecartEntity",
+    "MixinDispenserBlock",
+    "MixinEnderChestBlock",
+    "MixinHopperBlock",
+    "MixinHopperMinecartEntity",
+    "MixinShulkerBoxBlock",
+    "MixinStorageMinecartEntity"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
