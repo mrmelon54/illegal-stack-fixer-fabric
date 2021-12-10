@@ -36,6 +36,7 @@ public abstract class MixinChestBlock extends AbstractChestBlock<ChestBlockEntit
         int size = inventory.size();
         for (int i = 0; i < size; i++) {
             ItemStack stack = inventory.getStack(i);
+            System.out.println(stack.getCount());
             if (IllegalStackFixer.getInstance().shouldReduceStackSize(stack)) {
                 stack.setCount(stack.getItem().getMaxCount());
             }
