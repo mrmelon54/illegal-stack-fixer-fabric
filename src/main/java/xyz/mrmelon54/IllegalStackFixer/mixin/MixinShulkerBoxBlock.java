@@ -1,4 +1,4 @@
-package net.onpointcoding.illegalstackfixer.mixin;
+package xyz.mrmelon54.IllegalStackFixer.mixin;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShulkerBoxBlock;
@@ -11,7 +11,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.onpointcoding.illegalstackfixer.IllegalStackFixer;
+import xyz.mrmelon54.IllegalStackFixer.IllegalStackFixer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -24,8 +24,7 @@ public abstract class MixinShulkerBoxBlock {
         if (IllegalStackFixer.getInstance().shouldIgnorePlayer(player)) return;
 
         BlockEntity blockEntity = world.getBlockEntity(pos);
-        if (blockEntity instanceof ShulkerBoxBlockEntity) {
-            ShulkerBoxBlockEntity shulkerBoxBlockEntity = (ShulkerBoxBlockEntity) blockEntity;
+        if (blockEntity instanceof ShulkerBoxBlockEntity shulkerBoxBlockEntity) {
             int size = shulkerBoxBlockEntity.size();
             for (int i = 0; i < size; i++) {
                 ItemStack stack = shulkerBoxBlockEntity.getStack(i);

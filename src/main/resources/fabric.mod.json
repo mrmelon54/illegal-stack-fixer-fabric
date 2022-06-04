@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "illegalstackfixer",
+  "id": "illegal-stack-fixer",
   "version": "${version}",
   "name": "Illegal Stack Fixer",
   "description": "Resets stack count to maximum stack size",
@@ -8,22 +8,23 @@
     "MrMelon54"
   ],
   "contact": {
-    "homepage": "https://minecraft.onpointcoding.net/mods/illegalstackfixer",
-    "sources": "https://github.com/MrMelon54/illegal-stack-fixer-fabric"
+    "homepage": "https://minecraft.mrmelon54.xyz/mods/illegal-stack-fixer",
+    "sources": "https://github.com/MrMelon54/illegal-stack-fixer-fabric",
+    "issues": "https://github.com/MrMelon54/illegal-stack-fixer-fabric/issues"
   },
   "license": "MIT",
-  "icon": "assets/illegalstackfixer/icon.png",
-  "environment": "*",
+  "icon": "assets/illegal-stack-fixer/icon.png",
+  "environment": "server",
   "entrypoints": {
     "main": [
-      "net.onpointcoding.illegalstackfixer.IllegalStackFixer"
+      "xyz.mrmelon54.IllegalStackFixer.IllegalStackFixer"
     ]
   },
   "mixins": [
     "IllegalStackFixer.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.12.8",
+    "fabricloader": ">=0.14.0",
     "fabric": "*",
     "minecraft": "1.18.x"
   }

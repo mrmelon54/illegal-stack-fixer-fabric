@@ -1,12 +1,12 @@
-package net.onpointcoding.illegalstackfixer.mixin;
+package xyz.mrmelon54.IllegalStackFixer.mixin;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.vehicle.StorageMinecartEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
-import net.onpointcoding.illegalstackfixer.IMinecartEntitySize;
-import net.onpointcoding.illegalstackfixer.IllegalStackFixer;
+import xyz.mrmelon54.IllegalStackFixer.IMinecartEntitySize;
+import xyz.mrmelon54.IllegalStackFixer.IllegalStackFixer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -17,9 +17,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class MixinStorageMinecartEntity implements IMinecartEntitySize {
     @Shadow
     public abstract ItemStack getStack(int slot);
-
-    @Shadow
-    public abstract void setStack(int slot, ItemStack stack);
 
     @Inject(method = "interact", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/player/PlayerEntity;openHandledScreen(Lnet/minecraft/screen/NamedScreenHandlerFactory;)Ljava/util/OptionalInt;"))
     public void wrapInteract(PlayerEntity player, Hand hand, CallbackInfoReturnable<ActionResult> cir) {

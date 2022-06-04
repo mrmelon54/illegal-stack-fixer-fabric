@@ -1,4 +1,4 @@
-package net.onpointcoding.illegalstackfixer;
+package xyz.mrmelon54.IllegalStackFixer;
 
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.entity.player.PlayerEntity;

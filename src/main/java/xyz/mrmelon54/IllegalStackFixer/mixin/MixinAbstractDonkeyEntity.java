@@ -1,4 +1,4 @@
-package net.onpointcoding.illegalstackfixer.mixin;
+package xyz.mrmelon54.IllegalStackFixer.mixin;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.passive.AbstractDonkeyEntity;
@@ -8,7 +8,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.world.World;
-import net.onpointcoding.illegalstackfixer.IllegalStackFixer;
+import xyz.mrmelon54.IllegalStackFixer.IllegalStackFixer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
