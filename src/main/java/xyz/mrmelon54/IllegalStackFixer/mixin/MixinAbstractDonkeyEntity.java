@@ -2,7 +2,7 @@ package xyz.mrmelon54.IllegalStackFixer.mixin;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.passive.AbstractDonkeyEntity;
-import net.minecraft.entity.passive.HorseBaseEntity;
+import net.minecraft.entity.passive.AbstractHorseEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
@@ -20,8 +20,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
  */
 
 @Mixin(AbstractDonkeyEntity.class)
-public abstract class MixinAbstractDonkeyEntity extends HorseBaseEntity {
-    protected MixinAbstractDonkeyEntity(EntityType<? extends HorseBaseEntity> entityType, World world) {
+public abstract class MixinAbstractDonkeyEntity extends AbstractHorseEntity {
+    protected MixinAbstractDonkeyEntity(EntityType<? extends AbstractHorseEntity> entityType, World world) {
         super(entityType, world);
     }
 
