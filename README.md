@@ -19,3 +19,4 @@ It detects all invalid stack sizes from chests-like blocks and entities with sto
 ## Download
 
 - [CurseForge](https://www.curseforge.com/minecraft/mc-mods/illegal-stack-fixer)
+- [Modrinth](https://modrinth.com/mod/illegal-stack-fixer)
