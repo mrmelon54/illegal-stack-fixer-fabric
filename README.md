@@ -1,5 +1,7 @@
 # Illegal Stack Fixer
 
+# Moved to [illegal_stack_fixer](https://github.com/mrmelon54/illegal_stack_fixer)
+
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W1607S8)
 
 Requires the [Fabric Loader](https://fabricmc.net/use/) and [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
